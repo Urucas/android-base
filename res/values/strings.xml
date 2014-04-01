@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="tab_page_num">This is tab: </string>
+    <string name="tab_page_num_menu">This is tab with menu: </string>
+    <string name="menu_item_refresh">Refresh</string>
+    
+    <string name="search_result">Resultados de la busqueda</string>
+    
+    <string name="ranking">Ranking </string>
+    <string name="buscador">Buscador</string>
+    <string name="avanzada">Avanzada</string>
+    <string name="wranking">Ranking</string>
+    <string name="generos">Generos</string>
+    <string name="domicilio">Domicilio</string>
+    <string name="localizacion">Localizacion</string>
+    <string name="telefono">Teléfono</string>
+    <string name="web">Web</string>
+    <string name="vermas">Ver mas</string>
+    <string name="nohaymas">No se encontraron mas resultados</string>
+    <string name="nohaymascomentarios">No se encontraron mas comentarios</string>
+    <string name="seguidores">Seguidores</string>
+    <string name="visitas">Visitas</string>
+    <string name="votos">Votos</string>
+    <string name="sinrecientes">No hay radios recientes</string>
+    
+    <string name="radios">RADIOS</string>
+    <string name="milista">MI LISTA</string>
+    <string name="actividad">ACTIVIDAD</string>
+    
+    <string name="demo_external_activity">Demo External Activity</string>
+    <string name="demo_collection">Demo Collection</string>
+    
+    <string name="no_connection">Error al conectar con el servidor!</string>
+    <string name="error_creating_player">Error al conectar el servidor de streaming!</string>
+    <string name="stream_not_supported">Errror al conectatar con la radio, streaming no sportado</string>
+    <string name="all_generos">Todos los generos</string>
+    <string name="all_paises">Todos los paises</string>
+    <string name="all_idiomas">Todos los idiomas</string>
+    <string name="all_provincias">Todos las provincias</string>
+    <string name="all_ciudades">Todos las ciudades</string>
+    
+    <string name="todas">Todas</string>
+    <string name="masvisitas">Mas Visitas</string>
+    <string name="masvisitadas">Mas Visitadas</string>
+    <string name="masagregadas">Mas Agregadas</string>
+    <string name="mascomentadas">Mas Comentadas</string>
+    <string name="masvotos">Mas Votadas</string>
+    <string name="masseguidores">Mas Seguidores</string>
+    <string name="ultimas_incorporadas">Ultimas incorporadas</string>
+    <string name="alfabetico">Alfabético</string>
+    <string name="random">Al azar</string>
+    
+    <string name="loading_content">Cargando contenido</string>
+    
+    <string name="follow_radio">esta siguiendo </string>
+    <string name="unfollow_radio">dejó de seguir </string>
+    <string name="vote_radio">votó </string>
+    <string name="new_message_radio">comentó en muro </string>
+    <string name="answer_radio">respondió en muro </string>
+    <string name="anios">Años</string>
+    <string name="official_account">Cuenta Oficial</string>
+    
+    <string name="time_ago_prefix"></string>
+    <string name="time_ago_suffix">ago</string>
+    <string name="time_ago_seconds">less than a minute</string>
+    <string name="time_ago_minute">about a minute</string>
+    <string name="time_ago_minutes">%d minutes</string>
+    <string name="time_ago_hour">about an hour</string>
+    <string name="time_ago_hours">about %d hours</string>
+    <string name="time_ago_day">a day</string>
+    <string name="time_ago_days">%d days</string>
+    <string name="time_ago_month">about a month</string>
+    <string name="time_ago_months">%d months</string>
+    <string name="time_ago_year">about a year</string>
+    <string name="time_ago_years">%d years</string>
+    
+</resources>
