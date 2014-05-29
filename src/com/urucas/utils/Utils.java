@@ -39,30 +39,30 @@ import android.widget.Toast;
 public abstract class Utils {
 
 	public static String generateNonce() {
-  	try {
-    	// Create a secure random number generator
-      SecureRandom sr = SecureRandom.getInstance("SHA1PRNG");
+  		try {
+    			// Create a secure random number generator
+      			SecureRandom sr = SecureRandom.getInstance("SHA1PRNG");
 
-      // Get 1024 random bits
-      byte[] bytes = new byte[1024/8];
-      sr.nextBytes(bytes);
+      			// Get 1024 random bits
+      			byte[] bytes = new byte[1024/8];
+      			sr.nextBytes(bytes);
 
-      // Create two secure number generators with the same seed
-      int seedByteCount = 10;
-      byte[] seed = sr.generateSeed(seedByteCount);
+      			// Create two secure number generators with the same seed
+      			int seedByteCount = 10;
+      			byte[] seed = sr.generateSeed(seedByteCount);
 
-      sr = SecureRandom.getInstance("SHA1PRNG");
-      sr.setSeed(seed);
-      SecureRandom sr2 = SecureRandom.getInstance("SHA1PRNG");
-      sr2.setSeed(seed);
+      			sr = SecureRandom.getInstance("SHA1PRNG");
+      			sr.setSeed(seed);
+      			SecureRandom sr2 = SecureRandom.getInstance("SHA1PRNG");
+      			sr2.setSeed(seed);
 
-      String nonce = Long.toHexString(sr2.nextLong());
-             nonce = nonce.substring(0,7);
+			String nonce = Long.toHexString(sr2.nextLong());
+             		nonce = nonce.substring(0,7);
 
-      return nonce;
+      			return nonce;
 
-    } catch (NoSuchAlgorithmException e) {}
-  	return null;
+    		} catch (NoSuchAlgorithmException e) {}
+  		return null;
  	}	
 
 	public static String md5(final String s) {
