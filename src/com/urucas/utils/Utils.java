@@ -38,6 +38,33 @@ import android.widget.Toast;
 
 public abstract class Utils {
 
+	public static String generateNonce() {
+  	try {
+    	// Create a secure random number generator
+      SecureRandom sr = SecureRandom.getInstance("SHA1PRNG");
+
+      // Get 1024 random bits
+      byte[] bytes = new byte[1024/8];
+      sr.nextBytes(bytes);
+
+      // Create two secure number generators with the same seed
+      int seedByteCount = 10;
+      byte[] seed = sr.generateSeed(seedByteCount);
+
+      sr = SecureRandom.getInstance("SHA1PRNG");
+      sr.setSeed(seed);
+      SecureRandom sr2 = SecureRandom.getInstance("SHA1PRNG");
+      sr2.setSeed(seed);
+
+      String nonce = Long.toHexString(sr2.nextLong());
+             nonce = nonce.substring(0,7);
+
+      return nonce;
+
+    } catch (NoSuchAlgorithmException e) {}
+  	return null;
+ 	}	
+
 	public static int intIDFromResource(Context context, String name, String type) {
 		return context.getResources().getIdentifier(name, type, context.getPackageName());		
 	}
